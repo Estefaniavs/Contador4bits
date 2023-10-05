@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/CarpetaCompartida/decodificador/DSP.ncd
+OUTFILE=/home/ise/CarpetaCompartida/decodificador/DSP.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/home/ise/CarpetaCompartida/decodificador
+LICENSE=WebPack
+USER_INFO=211847159_0_0_350

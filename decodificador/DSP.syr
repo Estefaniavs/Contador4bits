@@ -1,0 +1,389 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: DSP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DSP.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DSP"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : DSP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/ise/CarpetaCompartida/decodificador/deco.vhd" in Library work.
+Entity <dsp> compiled.
+Entity <dsp> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <DSP> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <DSP> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "/home/ise/CarpetaCompartida/decodificador/deco.vhd" line 82: Mux is complete : default of case is discarded
+Entity <DSP> analyzed. Unit <DSP> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <DSP>.
+    Related source file is "/home/ise/CarpetaCompartida/decodificador/deco.vhd".
+    Found 16x8-bit ROM for signal <seg_signals>.
+    Found 1-of-4 decoder for signal <digitos>.
+    Found 26-bit up counter for signal <clk_counter>.
+    Found 20-bit up counter for signal <clk_counter2>.
+    Found 4-bit 4-to-1 multiplexer for signal <counter>.
+    Found 4-bit up counter for signal <counterA>.
+    Found 4-bit up counter for signal <counterB>.
+    Found 4-bit up counter for signal <counterC>.
+    Found 4-bit up counter for signal <counterD>.
+    Found 2-bit up counter for signal <secuencia>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   7 Counter(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Decoder(s).
+Unit <DSP> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Counters                                             : 7
+ 2-bit up counter                                      : 1
+ 20-bit up counter                                     : 1
+ 26-bit up counter                                     : 1
+ 4-bit up counter                                      : 4
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Counters                                             : 7
+ 2-bit up counter                                      : 1
+ 20-bit up counter                                     : 1
+ 26-bit up counter                                     : 1
+ 4-bit up counter                                      : 4
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <DSP> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DSP, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 64
+ Flip-Flops                                            : 64
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : DSP.ngr
+Top Level Output File Name         : DSP
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 14
+
+Cell Usage :
+# BELS                             : 236
+#      GND                         : 1
+#      INV                         : 7
+#      LUT1                        : 44
+#      LUT2                        : 33
+#      LUT2_L                      : 1
+#      LUT3                        : 13
+#      LUT4                        : 28
+#      LUT4_D                      : 2
+#      MUXCY                       : 56
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 46
+# FlipFlops/Latches                : 64
+#      FDC                         : 26
+#      FDCE                        : 16
+#      FDE                         : 2
+#      FDR                         : 20
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 1
+#      OBUF                        : 12
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       66  out of   4656     1%  
+ Number of Slice Flip Flops:             64  out of   9312     0%  
+ Number of 4 input LUTs:                128  out of   9312     1%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    232     6%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 64    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 42    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.151ns (Maximum Frequency: 162.588MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 8.070ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.151ns (frequency: 162.588MHz)
+  Total number of paths / destination ports: 2238 / 102
+-------------------------------------------------------------------------
+Delay:               6.151ns (Levels of Logic = 9)
+  Source:            clk_counter_5 (FF)
+  Destination:       counterC_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: clk_counter_5 to counterC_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.622  clk_counter_5 (clk_counter_5)
+     LUT2:I0->O            1   0.704   0.000  counterA_cmp_eq0001_wg_lut<0> (counterA_cmp_eq0001_wg_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  counterA_cmp_eq0001_wg_cy<0> (counterA_cmp_eq0001_wg_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  counterA_cmp_eq0001_wg_cy<1> (counterA_cmp_eq0001_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  counterA_cmp_eq0001_wg_cy<2> (counterA_cmp_eq0001_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  counterA_cmp_eq0001_wg_cy<3> (counterA_cmp_eq0001_wg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  counterA_cmp_eq0001_wg_cy<4> (counterA_cmp_eq0001_wg_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  counterA_cmp_eq0001_wg_cy<5> (counterA_cmp_eq0001_wg_cy<5>)
+     MUXCY:CI->O          33   0.331   1.298  counterA_cmp_eq0001_wg_cy<6> (counterA_cmp_eq0001)
+     LUT3:I2->O            4   0.704   0.587  counterD_not0001134 (counterC_not0001)
+     FDCE:CE                   0.555          counterC_0
+    ----------------------------------------
+    Total                      6.151ns (3.644ns logic, 2.507ns route)
+                                       (59.2% logic, 40.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 204 / 11
+-------------------------------------------------------------------------
+Offset:              8.070ns (Levels of Logic = 4)
+  Source:            secuencia_0 (FF)
+  Destination:       seven_seg<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: secuencia_0 to seven_seg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             14   0.591   1.175  secuencia_0 (secuencia_0)
+     LUT3:I0->O            1   0.704   0.000  Mmux_counter_3 (Mmux_counter_3)
+     MUXF5:I1->O           7   0.321   0.883  Mmux_counter_2_f5 (counter<0>)
+     LUT4:I0->O            1   0.704   0.420  Mrom_seg_signals51 (seven_seg_5_OBUF)
+     OBUF:I->O                 3.272          seven_seg_5_OBUF (seven_seg<5>)
+    ----------------------------------------
+    Total                      8.070ns (5.592ns logic, 2.478ns route)
+                                       (69.3% logic, 30.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 2.94 secs
+ 
+--> 
+
+
+Total memory usage is 610700 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

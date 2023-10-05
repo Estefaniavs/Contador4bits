@@ -1,0 +1,72 @@
+xst -intstyle ise -ifn "/home/ise/decodificador/DSP.xst" -ofn "/home/ise/decodificador/DSP.syr" 
+xst -intstyle ise -ifn "/home/ise/decodificador/DSP.xst" -ofn "/home/ise/decodificador/DSP.syr" 
+xst -intstyle ise -ifn "/home/ise/decodificador/DSP.xst" -ofn "/home/ise/decodificador/DSP.syr" 
+xst -intstyle ise -ifn "/home/ise/decodificador/DSP.xst" -ofn "/home/ise/decodificador/DSP.syr" 
+xst -intstyle ise -ifn "/home/ise/decodificador/DSP.xst" -ofn "/home/ise/decodificador/DSP.syr" 
+xst -intstyle ise -ifn "/home/ise/decodificador/DSP.xst" -ofn "/home/ise/decodificador/DSP.syr" 
+xst -intstyle ise -ifn "/home/ise/decodificador/DSP.xst" -ofn "/home/ise/decodificador/DSP.syr" 
+xst -intstyle ise -ifn "/home/ise/decodificador/DSP.xst" -ofn "/home/ise/decodificador/DSP.syr" 
+xst -intstyle ise -ifn "/home/ise/decodificador/DSP.xst" -ofn "/home/ise/decodificador/DSP.syr" 
+xst -intstyle ise -ifn "/home/ise/decodificador/DSP.xst" -ofn "/home/ise/decodificador/DSP.syr" 
+xst -intstyle ise -ifn "/home/ise/decodificador/DSP.xst" -ofn "/home/ise/decodificador/DSP.syr" 
+xst -intstyle ise -ifn "/home/ise/decodificador/DSP.xst" -ofn "/home/ise/decodificador/DSP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc iodeco.ucf -p xc3s500e-fg320-4 DSP.ngc DSP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o DSP_map.ncd DSP.ngd DSP.pcf 
+par -w -intstyle ise -ol high -t 1 DSP_map.ncd DSP.ncd DSP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DSP.twx DSP.ncd -o DSP.twr DSP.pcf -ucf iodeco.ucf 
+bitgen -intstyle ise -f DSP.ut DSP.ncd 
+xst -intstyle ise -ifn "/home/ise/decodificador/DSP.xst" -ofn "/home/ise/decodificador/DSP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc iodeco.ucf -p xc3s500e-fg320-4 DSP.ngc DSP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o DSP_map.ncd DSP.ngd DSP.pcf 
+par -w -intstyle ise -ol high -t 1 DSP_map.ncd DSP.ncd DSP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DSP.twx DSP.ncd -o DSP.twr DSP.pcf -ucf iodeco.ucf 
+bitgen -intstyle ise -f DSP.ut DSP.ncd 
+xst -intstyle ise -ifn "/home/ise/decodificador/DSP.xst" -ofn "/home/ise/decodificador/DSP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc iodeco.ucf -p xc3s500e-fg320-4 DSP.ngc DSP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o DSP_map.ncd DSP.ngd DSP.pcf 
+par -w -intstyle ise -ol high -t 1 DSP_map.ncd DSP.ncd DSP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DSP.twx DSP.ncd -o DSP.twr DSP.pcf -ucf iodeco.ucf 
+bitgen -intstyle ise -f DSP.ut DSP.ncd 
+xst -intstyle ise -ifn "/home/ise/decodificador/DSP.xst" -ofn "/home/ise/decodificador/DSP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc iodeco.ucf -p xc3s500e-fg320-4 DSP.ngc DSP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o DSP_map.ncd DSP.ngd DSP.pcf 
+par -w -intstyle ise -ol high -t 1 DSP_map.ncd DSP.ncd DSP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DSP.twx DSP.ncd -o DSP.twr DSP.pcf -ucf iodeco.ucf 
+bitgen -intstyle ise -f DSP.ut DSP.ncd 
+xst -intstyle ise -ifn "/home/ise/decodificador/DSP.xst" -ofn "/home/ise/decodificador/DSP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc iodeco.ucf -p xc3s500e-fg320-4 DSP.ngc DSP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o DSP_map.ncd DSP.ngd DSP.pcf 
+par -w -intstyle ise -ol high -t 1 DSP_map.ncd DSP.ncd DSP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DSP.twx DSP.ncd -o DSP.twr DSP.pcf -ucf iodeco.ucf 
+bitgen -intstyle ise -f DSP.ut DSP.ncd 
+xst -intstyle ise -ifn "/home/ise/decodificador/DSP.xst" -ofn "/home/ise/decodificador/DSP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc iodeco.ucf -p xc3s500e-fg320-4 DSP.ngc DSP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o DSP_map.ncd DSP.ngd DSP.pcf 
+par -w -intstyle ise -ol high -t 1 DSP_map.ncd DSP.ncd DSP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DSP.twx DSP.ncd -o DSP.twr DSP.pcf -ucf iodeco.ucf 
+bitgen -intstyle ise -f DSP.ut DSP.ncd 
+xst -intstyle ise -ifn "/home/ise/decodificador/DSP.xst" -ofn "/home/ise/decodificador/DSP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc iodeco.ucf -p xc3s500e-fg320-4 DSP.ngc DSP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o DSP_map.ncd DSP.ngd DSP.pcf 
+par -w -intstyle ise -ol high -t 1 DSP_map.ncd DSP.ncd DSP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DSP.twx DSP.ncd -o DSP.twr DSP.pcf -ucf iodeco.ucf 
+bitgen -intstyle ise -f DSP.ut DSP.ncd 
+xst -intstyle ise -ifn "/home/ise/CarpetaCompartida/decodificador/DSP.xst" -ofn "/home/ise/CarpetaCompartida/decodificador/DSP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc iodeco.ucf -p xc3s500e-fg320-4 DSP.ngc DSP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o DSP_map.ncd DSP.ngd DSP.pcf 
+par -w -intstyle ise -ol high -t 1 DSP_map.ncd DSP.ncd DSP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DSP.twx DSP.ncd -o DSP.twr DSP.pcf -ucf iodeco.ucf 
+bitgen -intstyle ise -f DSP.ut DSP.ncd 
+xst -intstyle ise -ifn "/home/ise/CarpetaCompartida/decodificador/DSP.xst" -ofn "/home/ise/CarpetaCompartida/decodificador/DSP.syr" 
+xst -intstyle ise -ifn "/home/ise/CarpetaCompartida/decodificador/DSP.xst" -ofn "/home/ise/CarpetaCompartida/decodificador/DSP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc iodeco.ucf -p xc3s500e-fg320-4 DSP.ngc DSP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o DSP_map.ncd DSP.ngd DSP.pcf 
+par -w -intstyle ise -ol high -t 1 DSP_map.ncd DSP.ncd DSP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DSP.twx DSP.ncd -o DSP.twr DSP.pcf -ucf iodeco.ucf 
+bitgen -intstyle ise -f DSP.ut DSP.ncd 
+xst -intstyle ise -ifn "/home/ise/CarpetaCompartida/decodificador/DSP.xst" -ofn "/home/ise/CarpetaCompartida/decodificador/DSP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc iodeco.ucf -p xc3s500e-fg320-4 DSP.ngc DSP.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o DSP_map.ncd DSP.ngd DSP.pcf 
+par -w -intstyle ise -ol high -t 1 DSP_map.ncd DSP.ncd DSP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DSP.twx DSP.ncd -o DSP.twr DSP.pcf -ucf iodeco.ucf 
+bitgen -intstyle ise -f DSP.ut DSP.ncd 

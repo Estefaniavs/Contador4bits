@@ -1,0 +1,8 @@
+V3 4
+FL /home/ise/CarpetaCompartida/decodificador/deco.vhd 2023/10/05.03:33:14 P.20131013
+EN work/DSP 1696476797 FL /home/ise/CarpetaCompartida/decodificador/deco.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/DSP/Behavioral 1696476798 \
+      FL /home/ise/CarpetaCompartida/decodificador/deco.vhd EN work/DSP 1696476797
+FL /home/ise/decodificador/deco.vhd 2023/10/03.17:12:04 P.20131013
